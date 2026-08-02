@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/ + https://github.com/Upsolver
+note: >-
+  Upsolver was acquired by Qlik (product now continues as Qlik Open Lakehouse).
+  The first-party GitHub repos below are archived but the packages remain
+  published and installable. All were authored by Upsolver (info@upsolver.com /
+  @upsolver.com maintainers).
+packages:
+  - language: python
+    registry: pypi
+    name: upsolver-sdk-python
+    version: 0.1.12
+    url: https://pypi.org/project/upsolver-sdk-python/
+    install: pip install upsolver-sdk-python
+    description: Python SDK for Upsolver — DB API 2.0 (PEP 249) connector that executes SQLake SQL over the Upsolver HTTP API using an API token.
+    repository: https://github.com/Upsolver/upsolver-sdk-python
+    official: true
+    archived: true
+  - language: python
+    registry: pypi
+    name: upsolver-cli
+    version: 0.6.4
+    url: https://pypi.org/project/upsolver-cli/
+    install: pip install upsolver-cli
+    description: Upsolver's CLI — terminal-based interactive shell that connects to the Upsolver API service over HTTP to run SQL statements.
+    repository: https://github.com/Upsolver/cli
+    official: true
+    archived: true
+  - language: python
+    registry: pypi
+    name: dbt-upsolver
+    version: 1.5.29
+    url: https://pypi.org/project/dbt-upsolver/
+    install: pip install dbt-upsolver
+    description: dbt adapter for Upsolver (DBT Integration for Upsolver), authored by the Upsolver Team.
+    repository: https://github.com/Upsolver/dbt-upsolver
+    official: true
+  - language: python
+    registry: github
+    name: iceberg-diag
+    url: https://github.com/Upsolver/iceberg-diag
+    install: brew tap upsolver/iceberg-diag && brew install iceberg-diag
+    description: Upsolver Iceberg table diagnostics CLI (also distributed via the upsolver/homebrew-iceberg-diag Homebrew tap).
+    repository: https://github.com/Upsolver/iceberg-diag
+    official: true
+registries_probed:
+  - registry: npm
+    query: upsolver
+    result: none
+  - registry: pypi
+    result: upsolver-sdk-python (200), upsolver-cli (200), dbt-upsolver (200), upsolver (404)
+  - registry: github
+    org: https://github.com/Upsolver
+    result: 13 public repos; first-party upsolver-sdk-python, cli, dbt-upsolver, iceberg-diag, homebrew-iceberg-diag

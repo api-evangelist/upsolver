@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+note: >-
+  Probed the /.well-known/ discovery surface on the Upsolver website and API
+  host. No documents were found. www.upsolver.com now serves an "Upsolver is
+  now part of Qlik" redirect page behind a bot-protection layer that returns
+  403 for non-root paths; api.upsolver.com returns 404 for every well-known
+  path. Absence recorded as valid data.
+hosts:
+  - host: https://www.upsolver.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+      - path: /llms.txt
+        status: 403
+  - host: https://api.upsolver.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 404

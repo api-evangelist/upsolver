@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/Upsolver/upsolver-sdk-python
+docs: https://docs.upsolver.com/ (redirects to https://help.qlik.com/en-US/upsolver/sqlake/)
+note: >-
+  Upsolver publishes no OpenAPI, so this profile was captured from the
+  first-party Python SDK and CLI documentation rather than derived from a
+  spec. Programmatic access to the Upsolver (SQLake) API uses a personal API
+  token generated in the SQLake console (Settings → API Tokens) together with
+  an account-specific API URL; the SDK connects with
+  upsolver.connect(token=..., api_url=...) and the CLI uses the same token +
+  API URL pair over HTTP.
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+  - name: api-token
+    type: apiKey
+    description: >-
+      Personal API token created at https://sqlake.upsolver.com/Settings/api-tokens,
+      passed with requests to the account's API URL (e.g. the api.upsolver.com
+      service host). Used by upsolver-sdk-python (DB API 2.0 connection) and
+      upsolver-cli.
+    sources:
+      - https://github.com/Upsolver/upsolver-sdk-python
+      - https://github.com/Upsolver/cli

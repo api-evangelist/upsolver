@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.qlik.com/en-US/upsolver/sqlake/release-notes/march-2025.htm
+url: https://help.qlik.com/en-US/upsolver/sqlake/release-notes/march-2025.htm
+scheme: date-based (YYYY.MM.DD-HH.MM build versions, monthly release-notes pages)
+current_version: 2025.03.13-02.07
+status: legacy
+note: >-
+  Upsolver's dated release notes continue under Qlik's help site as "Upsolver
+  (Legacy)". The March 2025 page is the most recent; each page carries a
+  notice that this content refers to a legacy Upsolver product and directs
+  users to Qlik Open Lakehouse for current features. Monthly pages for
+  February 2025, January 2025, and earlier releases are linked from the same
+  section.
+entries:
+  - version: 2025.03.13-02.07
+    date: '2025-03-13'
+    breaking: false
+    highlights:
+      - Improved efficiency of Iceberg backup file deletion (enhancement)
+      - Fixed an issue affecting data reads from Iceberg tables with deleted writer jobs (bug fix)
+  - version: 2025.02.13-11.24
+    date: '2025-02-13'
+    breaking: false
+    highlights:
+      - Added METADATA_RETENTION capability for Snowflake replication groups
+      - Updated libraries with recent security patches
+  - version: 2025.02.04-13.42
+    date: '2025-02-04'
+    breaking: false
+    highlights:
+      - New LEAD_IN_ARRAY function
+      - SNAPSHOT_PARALLELISM modifiable during job alterations
+      - Retention Deletions tracking tab in Datasets Module
+      - Key-pair authentication for Snowflake connections; Snowflake driver upgraded to 3.16.0
+      - Fixed simultaneous Iceberg manifest rewrite issues
+history_index:
+  - https://help.qlik.com/en-US/upsolver/sqlake/Content/Upsolver_Sqlake/overview/release-notes/february-2025.htm
+  - https://help.qlik.com/en-US/upsolver/sqlake/Content/Upsolver_Sqlake/overview/release-notes/january-2025.htm
+  - https://help.qlik.com/en-US/upsolver/sqlake/Content/Upsolver_Sqlake/overview/release-notes/earlier-releases/earlier-release-notes.htm

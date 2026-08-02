@@ -1,0 +1,27 @@
+# Upsolver
+
+> Upsolver is a cloud data ingestion and lakehouse pipeline company whose SQLake platform lets teams build and deploy streaming data pipelines with familiar SQL. Upsolver was acquired by Qlik and the product now continues as Qlik Open Lakehouse; the standalone Upsolver (SQLake) product is legacy, with docs maintained under Qlik's help site.
+
+Programmatic access to Upsolver (SQLake) uses a personal API token generated in the SQLake console (Settings > API Tokens) plus an account-specific API URL. First-party Python tooling — a DB API 2.0 SDK, a CLI, and a dbt adapter — talks to the Upsolver API service over HTTP. No OpenAPI, AsyncAPI, or llms.txt is published by the provider.
+
+## Docs
+
+- [Upsolver (Legacy) documentation](https://help.qlik.com/en-US/upsolver/sqlake/): current home of the SQLake docs (docs.upsolver.com redirects here)
+- [Release notes (March 2025, latest)](https://help.qlik.com/en-US/upsolver/sqlake/release-notes/march-2025.htm): dated build versions, e.g. 2025.03.13-02.07
+- [Qlik Open Lakehouse](https://www.qlik.com/us/products/qlik-open-lakehouse): successor product page
+
+## SDKs & Tools
+
+- [upsolver-sdk-python (PyPI)](https://pypi.org/project/upsolver-sdk-python/): Python DB API 2.0 connector for SQLake SQL over the Upsolver HTTP API
+- [upsolver-cli (PyPI)](https://pypi.org/project/upsolver-cli/): interactive SQL shell for the Upsolver API service
+- [dbt-upsolver (PyPI)](https://pypi.org/project/dbt-upsolver/): dbt adapter for Upsolver
+- [Upsolver on GitHub](https://github.com/Upsolver): 13 public repos, incl. iceberg-diag diagnostics CLI
+
+## Catalog artifacts (API Evangelist)
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/upsolver/refs/heads/main/apis.yml): APIs.json profile for Upsolver
+- [Packages](https://raw.githubusercontent.com/api-evangelist/upsolver/refs/heads/main/packages/upsolver-packages.yml): first-party package inventory
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/upsolver/refs/heads/main/authentication/upsolver-authentication.yml): API-token auth profile
+- [CLI](https://raw.githubusercontent.com/api-evangelist/upsolver/refs/heads/main/cli/upsolver-cli.yml): CLI surface
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/upsolver/refs/heads/main/lifecycle/upsolver-lifecycle.yml): legacy status + Qlik succession
+- [Changelog](https://raw.githubusercontent.com/api-evangelist/upsolver/refs/heads/main/changelog/upsolver-changelog.yml): recent release entries

@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/Upsolver/cli
+docs: https://docs.upsolver.com/sqlake/cli
+name: Upsolver CLI
+package: upsolver-cli
+status: archived
+note: >-
+  First-party CLI, published on PyPI and documented in the SQLake docs. The
+  GitHub repository (Upsolver/cli) was archived after the Qlik acquisition
+  (last push 2023-01-31); the package remains installable. Description per the
+  repo README: a command line client providing a terminal-based interactive
+  shell for running queries — it connects to Upsolver to execute SQL
+  statements and perform all DDL and DML operations, including loading data as
+  a continuous stream to various data destinations, over the Upsolver API
+  service via HTTP.
+install:
+  - method: pip
+    command: pip install upsolver-cli
+surface:
+  - group: interactive shell
+    description: Terminal-based interactive SQL shell against the Upsolver (SQLake) engine.
+  - group: sql execution
+    description: Execute SQLake SQL statements — all DDL and DML operations, including continuous data loading to destinations.
+authentication: API token generated in SQLake (Settings → API Tokens) plus the account API URL.

@@ -1,9 +1,27 @@
 aid: upsolver
 name: Upsolver
-description: 'Upsolver is a company surfaced as a portfolio company of wing-venture-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: data. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Upsolver is a cloud data ingestion and lakehouse pipeline company whose
+  SQLake platform lets teams build and deploy high-scale streaming data
+  pipelines using familiar SQL, with automatic schema evolution and Apache
+  Iceberg optimization. Upsolver was acquired by Qlik and the product now
+  continues as Qlik Open Lakehouse; the standalone Upsolver (SQLake) product
+  is legacy, with documentation maintained under Qlik's help site and
+  first-party Python SDK, CLI, and dbt tooling still published on PyPI.
 url: https://raw.githubusercontent.com/api-evangelist/upsolver/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/11595894?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,11 +30,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Data
-apis: []
+- Data Pipelines
+- Data Lakehouse
+- Streaming
+- ETL
+- SQL
+- Apache Iceberg
+apis:
+- name: Upsolver SQLake API
+  description: >-
+    HTTP API behind the Upsolver SQLake platform, used by the first-party
+    Python SDK (DB API 2.0), CLI, and dbt adapter to execute SQLake SQL
+    statements (DDL, DML, continuous data loading). Authenticated with a
+    personal API token generated in the SQLake console plus an
+    account-specific API URL. No OpenAPI is published; the product is legacy
+    following the Qlik acquisition.
+  humanURL: https://help.qlik.com/en-US/upsolver/sqlake/
+  baseURL: https://api.upsolver.com
+  tags:
+  - Data Pipelines
+  - SQL
+  - Streaming
+  properties:
+  - type: Documentation
+    url: https://help.qlik.com/en-US/upsolver/sqlake/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +66,28 @@ maintainers:
 common:
 - type: Website
   url: https://www.upsolver.com/
+- type: Documentation
+  url: https://help.qlik.com/en-US/upsolver/sqlake/
+- type: GitHubOrganization
+  url: https://github.com/Upsolver
+- type: ChangeLog
+  url: changelog/upsolver-changelog.yml
+- type: Lifecycle
+  url: lifecycle/upsolver-lifecycle.yml
+- type: Packages
+  url: packages/upsolver-packages.yml
+- type: SDKs
+  url: packages/upsolver-packages.yml
+- type: CLI
+  url: cli/upsolver-cli.yml
+- type: Authentication
+  url: authentication/upsolver-authentication.yml
+- type: LLMsTxt
+  url: llms/upsolver-llms.txt
+- type: DomainSecurity
+  url: security/upsolver-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

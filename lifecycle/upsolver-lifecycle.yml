@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.qlik.com/en-US/upsolver/sqlake/
+status: legacy
+note: >-
+  Upsolver was acquired by Qlik. The standalone Upsolver (SQLake) product is
+  now a legacy offering: www.upsolver.com serves an "Upsolver is now part of
+  Qlik" notice pointing to Qlik Open Lakehouse, docs.upsolver.com 301-redirects
+  to the "Upsolver (Legacy)" section of help.qlik.com, and each docs page
+  carries a notice that the content refers to a legacy Upsolver product,
+  directing users to Qlik Open Lakehouse documentation. The first-party SDK
+  and CLI GitHub repositories are archived (upsolver-sdk-python last push
+  2024-11-04, cli last push 2023-01-31) though the PyPI packages remain
+  installable. Release notes continue on the Qlik help site (latest captured:
+  2025-03-13). No public status page or SLA page was found (status.upsolver.com
+  and trust.upsolver.com do not resolve).
+versioning:
+  scheme: date-based builds (YYYY.MM.DD-HH.MM)
+  current: 2025.03.13-02.07
+  docs: https://help.qlik.com/en-US/upsolver/sqlake/release-notes/march-2025.htm
+deprecation:
+  product_status: legacy — superseded by Qlik Open Lakehouse
+  successor: https://www.qlik.com/us/products/qlik-open-lakehouse
+  evidence:
+    - www.upsolver.com landing page states "Upsolver is now part of Qlik"
+    - docs.upsolver.com 301 -> https://help.qlik.com/en-US/upsolver/sqlake/ ("Upsolver (Legacy)")
+    - Upsolver/upsolver-sdk-python and Upsolver/cli GitHub repos are archived
+status_page: null
+sla: null
