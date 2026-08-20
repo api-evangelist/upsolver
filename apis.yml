@@ -34,6 +34,15 @@ modified: '2026-07-21'
 tags:
 - Company
 - Data
+- Data Pipeline
+- Data Lakehouse
+- Streaming
+- ETL
+- SQL
+- Apache Iceberg
+tags_raw:
+- Company
+- Data
 - Data Pipelines
 - Data Lakehouse
 - Streaming
@@ -52,6 +61,10 @@ apis:
   humanURL: https://help.qlik.com/en-US/upsolver/sqlake/
   baseURL: https://api.upsolver.com
   tags:
+  - Data Pipeline
+  - SQL
+  - Streaming
+  tags_raw:
   - Data Pipelines
   - SQL
   - Streaming
