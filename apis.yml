@@ -88,6 +88,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/qlik/
+  name: Qlik
+  x-relationship: acquired
+  x-evidence: "Upsolver was acquired by Qlik and the product now continues as Qlik Open Lakehouse; the standalone Upsolver (SQLake) product is legacy, with documentation maintained under Qlik's help site and first-party Python SDK, CLI, and dbt tooling st"
 - type: Website
   url: https://www.upsolver.com/
 - type: Documentation
